@@ -26,4 +26,4 @@ for x in a1:
     if x != "":
         y = x.split("\t")
         if len(y) > 9:
-            print(str(y[5]) + "\t" + str(y[0]))
+            print(str(y[3]) + "\t" + str(y[1]))
