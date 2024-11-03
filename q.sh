@@ -1,1 +1,1 @@
-hdfs dfs -head /hw2_output/part-00000
+hdfs dfs -head /app/hw3_output/part-00000
