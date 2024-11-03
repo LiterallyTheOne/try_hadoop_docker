@@ -1,10 +1,19 @@
+"""mapper"""
+
 from __future__ import print_function
 import sys
 
-a1 = sys.stdin
 
-lines = 0
-for x in a1:
-    lines += 1
+def main():
+    """main function"""
+    a1 = sys.stdin
 
-print(lines)
+    lines = 0
+    for _ in a1:
+        lines += 1
+
+    print(lines)
+
+
+if __name__ == "__main__":
+    main()
