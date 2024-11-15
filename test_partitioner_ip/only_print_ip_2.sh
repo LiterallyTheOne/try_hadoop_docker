@@ -8,6 +8,7 @@ yarn jar $HADOOP_STREAMING_JAR \
     -reducer "python only_print.py" \
     -numReduceTasks 2 \
     -input /ip_2/ip_2.txt \
-    -output /only_ip_output
+    -output /only_ip_output \
+    -partitioner org.apache.hadoop.mapred.lib.KeyFieldBasedPartitioner
 
 hdfs dfs -cat /only_ip_output/*
