@@ -1,0 +1,37 @@
+"""
+mapper
+
+0  | 1        | 2   | 3        | 4      | 5     | 6    | 7       | 8        | 9
+id | uploader | age | category | length | views | rate | ratings | comments | related_ids
+
+example_1:
+
+for x in a1:
+    x = x.replace("\n", "")
+    if x != "":
+        y = x.split("\t")
+        for r in y[9:]:
+            print(r, y[1])
+
+"""
+
+from __future__ import print_function
+import sys
+
+
+def main():
+    """main function"""
+
+    for x in sys.stdin:
+        x = x.replace("\n", "")
+
+        if x == "":
+            continue
+
+        y = x.split(" ")
+
+        print(str(y[0]) + "\t" + str(y[1]))
+
+
+if __name__ == "__main__":
+    main()
