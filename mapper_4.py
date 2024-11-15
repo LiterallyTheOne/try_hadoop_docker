@@ -26,10 +26,16 @@ def main():
 
     for x in a1:
         x = x.replace("\n", "")
-        if x != "":
-            y = x.split("\t")
-            if len(y) > 9:
-                print(str(y[3]) + "\t" + str(y[5]))
+
+        if x == "":
+            continue
+
+        y = x.split("\t")
+
+        if len(y) <= 9:
+            continue
+
+        print(str(y[3]) + "\t" + str(y[5]))
 
 
 if __name__ == "__main__":
